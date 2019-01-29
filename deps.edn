@@ -1,0 +1,13 @@
+{:aliases
+ {:dev
+  {:extra-paths ["test"],
+   :extra-deps {com.datomic/datomic-free {:mvn/version "0.9.5656"}}}},
+ :deps
+ {com.datomic/clj-client {:mvn/version "0.8.606"},
+  omnyway-labs/nomad
+  {:local/root "../nomad"
+   :git/url "https://github.com/omnyway-labs/nomad.git",
+   :sha "6241dd85f0404b76d38a8747fa9ed1161e04a14e",
+   :time "2019-01-22T00:36:06.000+0000"},
+  org.clojure/clojure {:mvn/version "1.9.0"},
+  org.clojure/core.async {:mvn/version "0.3.443"}}}
